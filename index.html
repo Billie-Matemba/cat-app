@@ -4,17 +4,51 @@
 <head>
     <meta charset="utf-8">
     <title>CatPhotoApp</title>
+    <style>
+      body{
+        background-color: #D8DDEF;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      } 
+      .cat {
+        background-color: #A0A4B8;
+        margin: 0.5em;
+        padding: 1em;
+        border-radius: 1em;
+        border: 1px solid #7293A0;
+        flex: 1;
+      }
+      
+
+      @media (min-width : 960px) {
+        .cats {
+        display: flex;
+
+      }
+
+    }
+    fieldset {
+      margin: 1em;
+      border: 0;
+
+    }
+    button {
+      padding: 1em;
+    }
+    
+    </style>
+    </head>
   </head>
 <body>
     <main>
       <h1>CatPhotoApp</h1>
-      <section>
+      <section class="cats">
+      <section class="cat">
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       </section>
-      <section>
+      <section class="cat">
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
         <ul>
@@ -26,6 +60,8 @@
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
           <figcaption>Cats <em>love</em> lasagna.</figcaption>  
         </figure>
+      </section>
+        <section class="cat">
         <h3>Top 3 things cats hate:</h3>
         <ol>
           <li>flea treatment</li>
@@ -37,7 +73,8 @@
           <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
         </figure>
       </section>
-      <section>
+      </section>
+      <section class="cat">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
           <fieldset>
@@ -55,6 +92,8 @@
           <button type="submit">Submit</button>
         </form>
       </section>
+
+      
     </main>
     <footer>
       <p>
